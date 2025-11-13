@@ -38,14 +38,14 @@ Run your own private ChatGPT style chatbot on your Mac using:
 ### 1. Install Docker Desktop
 
 1. Download Docker Desktop for Mac from the official Docker website.
-[Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
+    [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
 2. Install and open Docker.
 3. Wait until the Docker whale icon appears and shows that Docker is running.
 
 ### 2. Install Ollama
 
 1. Download Ollama for macOS from the official Ollama website.
-[Download Ollama](https://ollama.com/download)
+    [Download Ollama](https://ollama.com/download)
 2. Install and open Ollama once to complete setup.
 3. Verify from Terminal:
 
@@ -77,7 +77,9 @@ Ask a question, then exit with Ctrl + C.
 
 ```bash
 docker pull ghcr.io/open-webui/open-webui:main
+```
 
+```bash
 docker run -d -p 3000:8080 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
 
 ```
